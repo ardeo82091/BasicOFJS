@@ -1,4 +1,4 @@
-var board = new Array(8).fill(null);
+var board = new Array(9).fill(null);
 const player1 =1;
 const player2 =2;
 var cell, result=0, won=0, used=0;
@@ -69,11 +69,12 @@ function mark(player,cell)
 
 function display()
 {
-    for(let i=0; i<9; i++)
-    {
-        console.log(board[i]);
-        console.log();
-    }
+    //for(let i=0; i<9; i++)
+    //{
+    //    console.log(board[i]);
+    //    console.log();
+    //}
+    console.log(board);
 }
 
 for(let i=0; i<5; i++)
