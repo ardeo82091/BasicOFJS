@@ -84,6 +84,7 @@ for(let i=0; i<5; i++)
     if(used ==1) {
         var cell = prompt("Plyer1 Plz Enter the cell ");
         mark(player1,cell);
+        used=0;
     }
     display();
     result = checkwin();
@@ -105,6 +106,7 @@ for(let i=0; i<5; i++)
     if(used ==1) {
         var cell = prompt("Plyer2 Plz Enter the cell ");
         mark(player2,cell);
+        used=0;
     }
     display();
     result = checkwin();
