@@ -1,24 +1,27 @@
-var num;
-for(var i=0; i<100000; i++)
+function isAmstrong(upperLimit)
 {
-    var count=0;
-    num=i;
-    while(num>0)
+    let numberToBeChecked;
+for(let i=0; i<upperLimit; i++)
+{
+    let countOfDigits=0;
+    numberToBeChecked=i;
+    while(numberToBeChecked>0)
     {
-        count++;
-        num = ~~(num/10);
+        countOfDigits++;
+        numberToBeChecked = ~~(numberToBeChecked/10);
     }
-    //console.log(count,num);
-    num=i;
-    var sum=0;
-    while(num>0)
+    //console.log(countOfDigits,numberToBeChecked);
+    numberToBeChecked=i;
+    let armstrongToBeChecked=0;
+    while(numberToBeChecked>0)
     {
-        var digit = num % 10;
-        sum = sum + Math.pow(digit, count);
-       // console.log(sum,count);
-        num = ~~(num/10);
+        let digit = numberToBeChecked % 10;
+        armstrongToBeChecked = armstrongToBeChecked + Math.pow(digit, countOfDigits);
+       // console.log(armstrongToBeChecked,countOfDigits);
+        numberToBeChecked = ~~(numberToBeChecked/10);
     }
-    if(sum == i) {
+    if(armstrongToBeChecked == i) {
         console.log(i);
     }
+}
 }

@@ -1,13 +1,13 @@
-const arr_len = prompt("Enter the number");
-var arr = [];
-var even=0;
-var odd=0;
-var zero=0;
-for(var i=0; i<arr_len; i++)
+const arr_len = prompt("Enter the length of an array");
+let arr = [];
+let even=0;
+let odd=0;
+let zero=0;
+for(let i=0; i<arr_len; i++)
 {
     arr[i] = prompt("Enter elements of an array");
 }
-for(var i=0; i<arr_len; i++)
+for(let i=0; i<arr_len; i++)
 {
     if(arr[i]==0)
     zero++;
